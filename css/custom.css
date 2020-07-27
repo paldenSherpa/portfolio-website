@@ -1,0 +1,78 @@
+/*Navbar brand button*/
+.nav-brand-btn {
+  background-color: #400F5D; /* Green */
+  border: none;
+  border-radius: 50%;
+  color: white;
+  /*top, right, buttom, left*/
+  padding: 5px 10px 5px 10px;
+  margin: 5px 5px 5px 5px;
+  cursor: pointer;
+  align-self: left;
+}
+/*Navbar brand button*/
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    /*justify-content: center;
+    align-items: center;*/
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.toggle {
+    display: none;
+}
+
+.push-left {
+    margin-right: auto;
+    align-self: left;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-items {
+        display: none;
+    }
+    .toggle {
+        display: flex;
+        margin-left: auto;
+        list-style: none;
+    }
+    /*.mobile-main-nav{
+        display: flex;
+        flex-direction: column;
+    }*/
+    .mobile-nav-items {
+        list-style: none;
+        align-self: center;
+    }
+}
+
+.container {
+    height: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 10px;
+}
+
+#profilePic {
+    align-self: center;
+    border-radius: 50%; 
+    height: 370px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 16px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 3;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 0.7em;
+}
